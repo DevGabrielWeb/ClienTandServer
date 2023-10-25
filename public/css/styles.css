@@ -1,0 +1,64 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/star.jpg'); /* Substitua 'nome-da-imagem.jpg' pelo nome da sua imagem de fundo */
+    background-size: cover; /* A imagem se ajustará automaticamente ao tamanho da janela do navegador */
+    background-repeat: no-repeat; /* A imagem de fundo não se repetirá */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    
+    color: #d1d0d7;
+    padding: 10px;
+}
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #fff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    display: inline; /* Torna o botão inline para ajustar à largura do texto */
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    transition: background-color 0.3s;
+}
+/* Estilo do botão no estado "hover" */
+button:hover {
+    background-color: #00d4ff; /* Define a cor de fundo quando o mouse está sobre o botão */
+    color: #fff; /* Define a cor do texto quando o mouse está sobre o botão */
+}
+p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.cor {
+    color: #fff;
+    font-size: 20px;
+    
+}

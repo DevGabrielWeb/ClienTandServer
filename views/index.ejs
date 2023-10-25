@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+</head>
+<body>
+    <h1>Selecione um Planeta</h1>
+
+    <form action="/obter-informacoes" method="GET">
+        <label class="cor" for="planeta">Escolha um planeta</label>
+        <select name="planeta" id="planeta">
+            <option value="Mercurio">Mercúrio</option>
+            <option value="Venus">Vênus</option>
+            <option value="Terra">Terra</option>
+            <!-- Adicione mais opções de planetas conforme necessário -->
+        </select>
+        <button type="submit">Obter Informações</button>
+    </form>
+
+    <!-- Aqui você pode exibir as informações do planeta selecionado após o envio do formulário -->
+    <% if (informacoesDoPlaneta) { %>
+        <h2>Informações do Planeta</h2>
+        <p>Nome: <%= informacoesDoPlaneta.nome %></p>
+        <p>Atmosfera: <%= informacoesDoPlaneta.atmosfera %></p>
+        <p>Órbita: <%= informacoesDoPlaneta.orbita %></p>
+        <p>Temperatura: <%= informacoesDoPlaneta.temperatura %>°C</p>
+        <!-- Adicione mais informações conforme necessário -->
+    <% } %>
+</body>
+</html>
